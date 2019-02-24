@@ -1,42 +1,36 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { HeaderStyles } from "../styles/HeaderStyles"
+import { Button, ButtonContainer } from "../styles/Button"
+import { graphql, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+const Header = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        file(relativePath: { regex: "/butiken.jpg/" }) {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <HeaderStyles>
+        <Img fluid={data.file.childImageSharp.fluid} />
+        <div>
+          <h1>Mats-Åke på Teg</h1>
+          <h3>Vitvaror, kök och hushållsapparater i Umeå</h3>
+          <ButtonContainer>
+            <Button primary>Öppettider</Button>
+            <Button>Hitta hit</Button>
+          </ButtonContainer>
+        </div>
+      </HeaderStyles>
+    )}
+  />
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
