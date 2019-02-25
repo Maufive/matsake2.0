@@ -11,7 +11,6 @@ const LogoStyles = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.8rem;
 `
 
 const Logo = () => (

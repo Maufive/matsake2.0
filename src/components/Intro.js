@@ -1,5 +1,5 @@
 import React from "react"
-import { IntroStyles } from "../styles/IntroStyles"
+import { IntroStyles } from "../styles/Index"
 
 const Intro = () => (
   <IntroStyles>

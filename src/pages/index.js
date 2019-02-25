@@ -4,6 +4,8 @@ import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 import Nav from "../components/Nav"
 import Header from "../components/header"
 import Intro from "../components/Intro"
+import Oppettider from "../components/Oppettider"
+import HittaHit from "../components/HittaHit"
 
 import interstate from "../assets/interstate.woff"
 import interstate_bold from "../assets/interstate_bold.woff"
@@ -50,18 +52,6 @@ const GlobalStyle = createGlobalStyle`
     src: local('InterstateBold'), url('${interstate_bold}') format('woff');
   }
 
-  /* @font-face {
-      font-family: "Interstate";
-      src: url("../assets/interstate.woff") format('woff');
-  }
-
-  @font-face {
-    font-family: "InterstateBold";
-    src: url("../assets/interstate-bold.woff") format('woff');
-    font-weight: bold;
-  } */
-  
-
   html {
     box-sizing: border-box;
     font-size: 10px;
@@ -93,10 +83,19 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size: 5rem;
+    font-weight: 900;
+  }
+
+  h2 {
+    font-size: 4rem !important;
+    font-weight: 900;
+    margin-bottom: ${props => props.theme.marginY};
   }
 
   h3 {
     font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: ${props => props.theme.marginY};
   }
 
   p {
@@ -117,6 +116,8 @@ const Index = () => (
       <Nav />
       <Header />
       <Intro />
+      <Oppettider />
+      <HittaHit />
     </StyledPage>
   </ThemeProvider>
 )
