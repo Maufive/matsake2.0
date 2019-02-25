@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const Button = styled.a`
   display: flex;
   align-items: center;
-  padding: 0.1rem 1.5rem;
+  padding: 0.5rem 2rem;
   font-family: Interstate;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: ${props => props.theme.white};
   border-radius: 10px;
   background: ${props =>
@@ -37,7 +37,7 @@ export const Button = styled.a`
 export const ButtonContainer = styled.div`
   display: flex;
   margin-top: ${props => props.theme.marginY};
-  width: 35%;
+  width: 400px;
   justify-content: space-around;
 `
 

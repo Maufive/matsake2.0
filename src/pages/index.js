@@ -88,18 +88,20 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;
+    font-family: InterstateBold !important;
   }
 
   h1 {
-    font-family: InterstateBold !important;
+    font-size: 5rem;
   }
 
-  h2, h3 {
-    font-family: InterstateBold !important;
+  h3 {
+    font-size: 3.5rem;
   }
 
   p {
     font-family: Interstate;
+    font-size: 2.5rem;
   }
 
   a, a:visited {

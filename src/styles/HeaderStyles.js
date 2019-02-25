@@ -20,7 +20,6 @@ export const HeaderStyles = styled.header`
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     h1 {
       letter-spacing: 5px;
-      font-size: 3rem;
       text-transform: uppercase;
     }
     h1,
