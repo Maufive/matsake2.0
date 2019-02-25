@@ -41,7 +41,6 @@ export const OppettiderStyles = styled.div`
 
 export const HittaHitStyles = styled.div`
   color: ${props => props.theme.darkBlue};
-  height: 60vh;
   text-align: center;
 
   > div {
@@ -56,4 +55,12 @@ export const HittaHitStyles = styled.div`
       margin-right: 1rem;
     }
   }
+`
+
+export const KokStyles = styled.div`
+  height: 60vh;
+  color: ${props => props.theme.darkBlue};
+  margin: 10rem auto;
+  text-align: center;
+  width: 600px;
 `

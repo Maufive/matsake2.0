@@ -6,6 +6,7 @@ import Header from "../components/header"
 import Intro from "../components/Intro"
 import Oppettider from "../components/Oppettider"
 import HittaHit from "../components/HittaHit"
+import Kok from "../components/Kok"
 
 import interstate from "../assets/interstate.woff"
 import interstate_bold from "../assets/interstate_bold.woff"
@@ -118,6 +119,7 @@ const Index = () => (
       <Intro />
       <Oppettider />
       <HittaHit />
+      <Kok />
     </StyledPage>
   </ThemeProvider>
 )
