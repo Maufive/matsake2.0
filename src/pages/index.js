@@ -5,6 +5,9 @@ import Nav from "../components/Nav"
 import Header from "../components/header"
 import Intro from "../components/Intro"
 
+import interstate from "../assets/interstate.woff"
+import interstate_bold from "../assets/interstate_bold.woff"
+
 const theme = {
   blue: "#0B58A4",
   darkBlue: "#27456B",
@@ -34,6 +37,20 @@ const StyledPage = styled.div`
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
+    font-family: "Interstate";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate'), url('${interstate}') format('woff');
+  }}
+
+  @font-face {
+    font-family: "InterstateBold";
+    font-style: normal;
+    font-weight: bold;
+    src: local('InterstateBold'), url('${interstate_bold}') format('woff');
+  }
+
+  /* @font-face {
       font-family: "Interstate";
       src: url("../assets/interstate.woff") format('woff');
   }
@@ -42,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "InterstateBold";
     src: url("../assets/interstate-bold.woff") format('woff');
     font-weight: bold;
-  }
+  } */
   
 
   html {
