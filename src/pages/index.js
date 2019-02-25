@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 
 import Nav from "../components/Nav"
@@ -36,12 +35,12 @@ const StyledPage = styled.div`
 const GlobalStyle = createGlobalStyle`
   @font-face {
       font-family: "Interstate";
-      src: url("../assets/interstate.woff2") format('woff2');
+      src: url("../assets/interstate.woff") format('woff');
   }
 
   @font-face {
     font-family: "InterstateBold";
-    src: url("../assets/interstate-bold.woff2") format('woff2');
+    src: url("../assets/interstate-bold.woff") format('woff');
     font-weight: bold;
   }
   
@@ -49,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-family: Interstate, Arial, Helvetica, sans-serif, sans-serif;
 		-webkit-font-smoothing: antialiased !important;
     text-shadow:1px 1px 1px 1px rgba(0,0,0,0.005);
     padding: 0;
@@ -92,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Index = ({ children }) => (
+const Index = () => (
   <ThemeProvider theme={theme}>
     <StyledPage>
       <GlobalStyle />
@@ -102,10 +101,5 @@ const Index = ({ children }) => (
     </StyledPage>
   </ThemeProvider>
 )
-
-Index.propTypes = {
-  children: PropTypes.node.isRequired,
-  location: PropTypes.object,
-}
 
 export default Index
