@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: Maufive/matsake2.0
+
+media_folder: static/personal/images
+public_folder: /images
+
+collections:
+  - name: personal
+    label: Personal
+    folder: "static/personal"
+    create: true
+    fields:
+      - { name: namn, label: Fullständigt namn, widget: string }
+      - { name: titel, label: Jobbtitel, widget: string }
+      - { name: nummer, label: Telefonnummer, widget: string }
+      - { name: mail, label: Email, widget: string }
+      - { name: image, label: Foto, widget: image }
+
+  - name: oppettider
+    label: Öppettider
+    folder: "static/oppettider"
+    create: true
+    fields:
+      - { name: mon-fri, label: Måndag - Fredag, widget: string }
+      - { name: sat, label: Lördag, widget: string }
+      - { name: sun, label: Söndag, widget: string }

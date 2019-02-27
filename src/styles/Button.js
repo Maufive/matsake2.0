@@ -7,8 +7,8 @@ export const Button = styled.a`
   font-family: Interstate;
   font-weight: 700;
   font-size: 2rem;
-  color: ${props => props.theme.white};
-  border-radius: 10px;
+  color: ${props => (props.primary ? props.theme.white : props.theme.red)};
+  border-radius: 5px;
   background: ${props =>
     props.primary
       ? `linear-gradient(
@@ -17,7 +17,16 @@ export const Button = styled.a`
     #a4000f 125.79%,
     #ac000b 125.8%
   )`
-      : `linear-gradient(90deg, #0B58A4 -25.11%, #27456B 124.68%)`};
+      : props.theme.white};
+  /* background: ${props =>
+    props.primary
+      ? `linear-gradient(
+    270deg,
+    #94010f -19.75%,
+    #a4000f 125.79%,
+    #ac000b 125.8%
+  )`
+      : `linear-gradient(90deg, #0B58A4 -25.11%, #27456B 124.68%)`}; */
   transition: all ${props => props.theme.animationTime} ease;
   cursor: pointer;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);

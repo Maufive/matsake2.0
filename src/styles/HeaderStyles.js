@@ -17,7 +17,7 @@ export const HeaderStyles = styled.header`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
     h1 {
       letter-spacing: 5px;
       text-transform: uppercase;
