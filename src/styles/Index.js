@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const IntroStyles = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 800px;
   margin: 10rem auto;
   text-align: center;
@@ -13,6 +14,26 @@ export const IntroStyles = styled.div`
   p {
     font-family: Interstate;
     color: ${props => props.theme.darkBlue};
+  }
+`
+
+export const IconStyles = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5rem;
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-weight: 700;
+    }
+    svg {
+      height: 100px;
+      width: 100px;
+      fill: ${props => props.theme.darkBlue};
+    }
   }
 `
 

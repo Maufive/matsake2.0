@@ -4,7 +4,8 @@ import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 import Nav from "../components/Nav"
 import Header from "../components/header"
 import Intro from "../components/Intro"
-import Oppettider from "../components/Oppettider"
+import HittaKok from "../components/HittaKok"
+// import Oppettider from "../components/Oppettider"
 import HittaHit from "../components/HittaHit"
 import Kok from "../components/Kok"
 
@@ -117,7 +118,7 @@ const Index = () => (
       <Nav />
       <Header />
       <Intro />
-      <Oppettider />
+      <HittaKok />
       <HittaHit />
       <Kok />
     </StyledPage>
