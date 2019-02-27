@@ -10,6 +10,7 @@ collections:
     label: Personal
     folder: "static/personal"
     create: true
+    identifier_field: namn
     fields:
       - { name: namn, label: Fullständigt namn, widget: string }
       - { name: titel, label: Jobbtitel, widget: string }
@@ -21,7 +22,8 @@ collections:
     label: Öppettider
     folder: "static/oppettider"
     create: true
+    identifier_field: "mon-fri"
     fields:
-      - { name: mon-fri, label: Måndag - Fredag, widget: string }
-      - { name: sat, label: Lördag, widget: string }
-      - { name: sun, label: Söndag, widget: string }
+      - { name: "mon-fri", label: "Måndag - Fredag", widget: string }
+      - { name: "sat", label: "Lördag", widget: string }
+      - { name: "sun", label: "Söndag", widget: string }

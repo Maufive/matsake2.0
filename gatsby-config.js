@@ -9,15 +9,22 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "work",
-        path: `${__dirname}/static/work/`,
+        name: "personal",
+        path: `${__dirname}/static/personal/`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `${__dirname}/static/work/images/`,
+        path: `${__dirname}/static/personal/images/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "oppettider",
+        path: `${__dirname}/static/oppettider/`,
       },
     },
     {
@@ -39,12 +46,7 @@ module.exports = {
     //     icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
+    `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
