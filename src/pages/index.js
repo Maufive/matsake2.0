@@ -8,6 +8,7 @@ import HittaKok from "../components/HittaKok"
 import Oppettider from "../components/Oppettider"
 import HittaHit from "../components/HittaHit"
 import Kok from "../components/Kok"
+import Footer from "../components/Footer"
 
 import interstate from "../assets/interstate.woff"
 import interstate_bold from "../assets/interstate_bold.woff"
@@ -124,6 +125,7 @@ const Index = () => (
       {/* <HittaHit /> */}
       {/* <Kok /> */}
       <Oppettider />
+      <Footer />
     </StyledPage>
   </ThemeProvider>
 )

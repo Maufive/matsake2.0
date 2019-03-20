@@ -84,9 +84,31 @@ export const KokStyles = styled.div`
   width: 600px;
 `
 
-export const Footer = styled.div`
-  height: 60vh;
+export const FooterStyles = styled.div`
   background: ${props => props.theme.black};
-  color: ${props => props.theme.blue};
+  color: ${props => props.theme.lightGrey};
   display: flex;
+  justify-content: space-evenly;
+  padding: 5rem 0;
+  width: 100%;
+
+  div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem;
+
+    h4 {
+      font-size: 2rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
 `
