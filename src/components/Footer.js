@@ -1,15 +1,9 @@
 import React from "react"
 import { FooterStyles } from "../styles/Index"
-
-/* 
-  Saker som ska finnas i footern:
-  Address,
-  Telefonnummer,
-  Email,
-  Facebook,
-  Länkar till ELON, Creoform, Bäcklunda,
-
-*/
+import LocationIcon from "../assets/location.svg"
+import PhoneIcon from "../assets/phone.svg"
+import FacebookIcon from "../assets/facebook.svg"
+import EmailIcon from "../assets/email.svg"
 
 const Footer = () => (
   <FooterStyles>
@@ -24,28 +18,44 @@ const Footer = () => (
     <div>
       <ul>
         <h4>Kontakta oss:</h4>
-        <li>Domarevägen 28B</li>
-        <li>904 33, Umeå</li>
-        <li>umea@elon.se</li>
-        <li>090 - 12 44 82</li>
-        <li>Facebook</li>
+        <li>
+          <LocationIcon /> Domarevägen 28B
+        </li>
+        <li>
+          <LocationIcon />
+          904 33, Umeå
+        </li>
+        <li>
+          <EmailIcon /> umea@elon.se
+        </li>
+        <li>
+          <PhoneIcon /> 090 - 12 44 82
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/pages/category/Heating--Ventilating---Air-Conditioning-Service/ELON-Mats%C3%85ke-p%C3%A5-Teg-418746171519744/"
+            target="_BLANK"
+          >
+            <FacebookIcon /> Facebook
+          </a>
+        </li>
       </ul>
     </div>
     <div>
       <ul>
         <h4>Länkar:</h4>
         <li>
-          <a href="www.elon.se" target="_blank">
+          <a href="www.elon.se" target="_BLANK">
             ELON
           </a>
         </li>
         <li>
-          <a href="www.backlunda.se" target="_blank">
+          <a href="www.backlunda.se" target="_BLANK">
             Bäcklunda kök
           </a>
         </li>
         <li>
-          <a href="www.creoform.se" target="_blank">
+          <a href="www.creoform.se" target="_BLANK">
             Creoform
           </a>
         </li>

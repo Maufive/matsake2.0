@@ -92,6 +92,14 @@ export const FooterStyles = styled.div`
   padding: 5rem 0;
   width: 100%;
 
+  a {
+    color: ${props => props.theme.lightGrey};
+    transition: all 300ms ease-out;
+    &:hover {
+      color: ${props => props.theme.blue};
+    }
+  }
+
   div {
     flex: 1;
     display: flex;
@@ -105,10 +113,21 @@ export const FooterStyles = styled.div`
 
     ul {
       list-style: none;
+      li {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 
   p {
     font-size: 1.5rem;
+  }
+
+  svg {
+    margin-right: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: ${props => props.theme.lightGrey};
   }
 `
