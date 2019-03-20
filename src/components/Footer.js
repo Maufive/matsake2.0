@@ -26,7 +26,9 @@ const Footer = () => (
           904 33, Umeå
         </li>
         <li>
-          <EmailIcon /> umea@elon.se
+          <a href="mailto:umea@elon.se">
+            <EmailIcon /> umea@elon.se
+          </a>
         </li>
         <li>
           <PhoneIcon /> 090 - 12 44 82
