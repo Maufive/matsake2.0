@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Mats-Åke på Teg`,
-    description: `Skriv en description här`,
+    title: `Mats Åke på Teg Umeå | Köp Vitvaror, kök, spis, tvättmaskin och torktumlare hos oss!`,
+    description: `Välkommen till Mats Åke på Teg i Umeå. Köp Vitvaror, Kök, Spis, Tvättmaskin, Torktumlare, eller hushållsapparater, hos oss.`,
     author: `Niklas Albinsson`,
   },
   plugins: [

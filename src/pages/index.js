@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 
+import SEO from "../components/seo"
 import Nav from "../components/Nav"
 import Header from "../components/header"
 import Intro from "../components/Intro"
@@ -118,6 +119,28 @@ const Index = () => (
   <ThemeProvider theme={theme}>
     <StyledPage>
       <GlobalStyle />
+      <SEO
+        title="Mats Åke på Teg Umeå | Köp Vitvaror, kök, spis, tvättmaskin och torktumlare hos oss!"
+        keywords={[
+          "ELON",
+          "Mats",
+          "Åke",
+          "på",
+          "teg",
+          "Umeå",
+          "vitvaror",
+          "kök",
+          "spis",
+          "tvättmaskin",
+          "torktumlare",
+          "hushållspapper",
+          "hushållsmaskiner",
+          "rita",
+          "kök",
+          "hemleverans",
+          "hemkörning",
+        ]}
+      />
       <Nav />
       <Header />
       <Intro />
