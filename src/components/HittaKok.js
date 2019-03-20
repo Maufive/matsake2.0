@@ -69,7 +69,9 @@ const HittaKok = () => (
         Hör av dig till oss för att boka tid med vår personal så ordnar vi ett
         hembesök för att planera ditt drömkök
       </p>
-      <Button primary>Kontakta oss</Button>
+      <a href="mailto:umea@elon.se?subject=Boka tid för hembesök">
+        <Button primary>Kontakta oss</Button>
+      </a>
     </Hembesok>
   </HittaKokStyles>
 )
