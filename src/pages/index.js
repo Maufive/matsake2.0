@@ -5,7 +5,7 @@ import Nav from "../components/Nav"
 import Header from "../components/header"
 import Intro from "../components/Intro"
 import HittaKok from "../components/HittaKok"
-// import Oppettider from "../components/Oppettider"
+import Oppettider from "../components/Oppettider"
 import HittaHit from "../components/HittaHit"
 import Kok from "../components/Kok"
 
@@ -40,6 +40,8 @@ const StyledPage = styled.div`
 `
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+
   @font-face {
     font-family: "Interstate";
     font-style: normal;
@@ -57,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 10px;
-    font-family: Interstate, Arial, Helvetica, sans-serif, sans-serif;
+    font-family: "Raleway", Arial, Helvetica, sans-serif, sans-serif;
 		-webkit-font-smoothing: antialiased !important;
     text-shadow:1px 1px 1px 1px rgba(0,0,0,0.005);
     padding: 0;
@@ -101,7 +103,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-family: Interstate;
+    font-family: "Raleway";
     font-size: 2.5rem;
   }
 
@@ -119,8 +121,9 @@ const Index = () => (
       <Header />
       <Intro />
       <HittaKok />
-      <HittaHit />
-      <Kok />
+      {/* <HittaHit /> */}
+      {/* <Kok /> */}
+      <Oppettider />
     </StyledPage>
   </ThemeProvider>
 )

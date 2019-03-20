@@ -8,6 +8,7 @@ export const Button = styled.a`
   font-weight: 700;
   font-size: 2rem;
   color: ${props => (props.primary ? props.theme.white : props.theme.red)};
+  width: fit-content;
   border-radius: 5px;
   background: ${props =>
     props.primary

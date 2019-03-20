@@ -15,7 +15,7 @@ export const IntroStyles = styled.div`
   }
 
   p {
-    font-family: Interstate;
+    font-family: "Raleway";
     color: ${props => props.theme.darkBlue};
   }
 `

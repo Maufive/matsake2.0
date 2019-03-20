@@ -12,7 +12,7 @@ export const IntroStyles = styled.div`
   }
 
   p {
-    font-family: Interstate;
+    font-weight: 400;
     color: ${props => props.theme.darkBlue};
   }
 `
@@ -38,16 +38,14 @@ export const IconStyles = styled.div`
 `
 
 export const OppettiderStyles = styled.div`
-  background: linear-gradient(90deg, #0b58a4 -23.52%, #27456b 124.66%);
   height: 50vh;
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.darkBlue};
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 5rem;
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-  margin: 10rem auto;
+  margin: 5rem auto;
   > div {
     display: flex;
     justify-content: space-between;
@@ -84,4 +82,11 @@ export const KokStyles = styled.div`
   margin: 10rem auto;
   text-align: center;
   width: 600px;
+`
+
+export const Footer = styled.div`
+  height: 60vh;
+  background: ${props => props.theme.black};
+  color: ${props => props.theme.blue};
+  display: flex;
 `
