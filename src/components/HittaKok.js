@@ -3,10 +3,16 @@ import ImageGallery from "react-image-gallery"
 import "react-image-gallery/styles/css/image-gallery.css"
 import { HittaKokStyles, Textbox, Hembesok } from "../styles/HittaKok"
 import { Button } from "../styles/Button"
-import Kok1 from "../images/kok_1.jpg"
-import Kok2 from "../images/kok_2.jpg"
-import Kok3 from "../images/kok_3.jpg"
-import Kok4 from "../images/kok_4.jpg"
+import Kok1 from "../images/kok1.jpg"
+import Kok2 from "../images/kok2.jpg"
+import Kok3 from "../images/kok3.jpg"
+import Kok4 from "../images/kok4.jpg"
+import Kok5 from "../images/kok5.jpg"
+import Kok6 from "../images/kok6.jpg"
+import Kok7 from "../images/kok7.jpg"
+import Kok8 from "../images/kok8.jpg"
+import Kok9 from "../images/kok9.jpg"
+import Kok10 from "../images/kok10.jpg"
 
 const images = [
   {
@@ -23,6 +29,24 @@ const images = [
   },
   {
     original: Kok4,
+  },
+  {
+    original: Kok5,
+  },
+  {
+    original: Kok6,
+  },
+  {
+    original: Kok7,
+  },
+  {
+    original: Kok8,
+  },
+  {
+    original: Kok9,
+  },
+  {
+    original: Kok10,
   },
 ]
 
