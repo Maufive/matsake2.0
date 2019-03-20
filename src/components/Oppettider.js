@@ -2,7 +2,7 @@ import React from "react"
 import { OppettiderStyles } from "../styles/Index"
 
 const Oppettider = () => (
-  <OppettiderStyles>
+  <OppettiderStyles id="oppettider">
     <h2>Öppettider:</h2>
     <div>
       <p>Måndag - Fredag:</p>

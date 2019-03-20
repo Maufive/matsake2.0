@@ -24,8 +24,12 @@ const Header = () => (
           <h1>Mats-Åke på Teg</h1>
           <h3>Vitvaror, kök och hushållsapparater i Umeå</h3>
           <ButtonContainer>
-            <Button primary>Öppettider</Button>
-            <Button>Hitta hit</Button>
+            <a href="#oppettider">
+              <Button primary>Öppettider</Button>
+            </a>
+            <a href="https://goo.gl/maps/sR3zwZovUnB2" target="_BLANK">
+              <Button>Hitta hit</Button>
+            </a>
           </ButtonContainer>
         </div>
       </HeaderStyles>

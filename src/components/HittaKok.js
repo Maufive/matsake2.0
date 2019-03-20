@@ -10,7 +10,6 @@ import Kok4 from "../images/kok4.jpg"
 import Kok5 from "../images/kok5.jpg"
 import Kok6 from "../images/kok6.jpg"
 import Kok7 from "../images/kok7.jpg"
-import Kok8 from "../images/kok8.jpg"
 import Kok9 from "../images/kok9.jpg"
 import Kok10 from "../images/kok10.jpg"
 
@@ -38,9 +37,6 @@ const images = [
   },
   {
     original: Kok7,
-  },
-  {
-    original: Kok8,
   },
   {
     original: Kok9,
