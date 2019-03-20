@@ -95,6 +95,8 @@ export const FooterStyles = styled.div`
   a {
     color: ${props => props.theme.lightGrey};
     transition: all 300ms ease-out;
+    display: flex;
+    align-items: center;
     &:hover {
       color: ${props => props.theme.blue};
     }
