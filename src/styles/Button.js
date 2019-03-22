@@ -5,7 +5,6 @@ export const Button = styled.a`
   align-items: center;
   padding: 0.5rem 2rem;
   font-family: "Raleway";
-  font-weight: 900;
   font-size: 2rem;
   color: ${props => (props.primary ? props.theme.white : props.theme.red)};
   width: fit-content;
@@ -26,6 +25,10 @@ export const Button = styled.a`
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &:visited {
+    color: ${props => (props.primary ? props.theme.white : props.theme.red)};
   }
 
   &:active {

@@ -17,7 +17,6 @@ export const HeaderStyles = styled.header`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
     h1 {
       letter-spacing: 5px;
       text-transform: uppercase;
@@ -26,6 +25,10 @@ export const HeaderStyles = styled.header`
     h3 {
       text-shadow: ${props => props.theme.textShadow};
       color: ${props => props.theme.white};
+    }
+
+    @media (min-width: 1300px) {
+      height: 90vh;
     }
   }
 `
