@@ -8,7 +8,7 @@ import Intro from "../components/Intro"
 import HittaKok from "../components/HittaKok"
 import Oppettider from "../components/Oppettider"
 import HittaHit from "../components/HittaHit"
-import Kok from "../components/Kok"
+import { Textbox } from "../styles/HittaKok"
 import Footer from "../components/Footer"
 
 import interstate from "../assets/interstate.woff"
@@ -146,7 +146,18 @@ const Index = () => (
       <Intro />
       <HittaKok />
       {/* <HittaHit /> */}
-      {/* <Kok /> */}
+      <Textbox>
+        <h2>Vår arbetsfilosofi</h2>
+        <p>
+          Service har varit vårt ledord under alla företagets år och något vi
+          tar på allra största allvar. I och med att fler och fler lågpriskedjor
+          öppnat upp runt staden så har vi valt att satsa på att ha så nöjda
+          kunder som möjligt. Just därför kommer vi alltid att försöka göra det
+          lilla extra för dig som kund. Det kan vara en reservdel,
+          tillhandahålla en gammal bruksanvisning eller ett hembesök om kunden
+          så önskar.
+        </p>
+      </Textbox>
       <Oppettider />
       <Footer />
     </StyledPage>

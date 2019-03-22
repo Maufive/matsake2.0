@@ -9,8 +9,7 @@ export const HittaKokStyles = styled.div`
 export const Textbox = styled.div`
   width: 800px;
   text-align: center;
-  margin: 0 auto;
-  padding: 5rem 0;
+  margin: 5rem auto;
   color: ${props => props.theme.darkBlue};
   font-weight: 400;
 `
