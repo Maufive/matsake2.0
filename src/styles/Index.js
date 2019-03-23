@@ -47,14 +47,12 @@ export const IconStyles = styled.div`
 `
 
 export const OppettiderStyles = styled.div`
-  height: 50vh;
   color: ${props => props.theme.darkBlue};
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 0 5rem;
-  margin: 5rem auto;
+  margin: 10rem auto;
   > div {
     display: flex;
     justify-content: space-between;

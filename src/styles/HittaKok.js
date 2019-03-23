@@ -27,6 +27,7 @@ export const Hembesok = styled.div`
   padding: 5rem 0;
   color: ${props => props.theme.white};
   background: linear-gradient(270deg, #27456b 0%, #0b58a4 100%);
+  margin-bottom: 10rem;
 
   h2 {
     margin-block-end: 0;

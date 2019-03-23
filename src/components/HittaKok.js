@@ -20,7 +20,9 @@ const Gallery = styled.div`
   > img {
     max-width: 1200px;
   }
-  margin-bottom: 5rem;
+  @media (min-width: 1599px) {
+    margin-bottom: 5rem;
+  }
 `
 
 const images = [
