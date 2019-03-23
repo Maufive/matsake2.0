@@ -16,12 +16,9 @@ import Kok10 from "../images/kok10.jpg"
 const images = [
   {
     original: Kok1,
-    description:
-      "Här kan man skriva en liten text om köket, vilket märke eller annan info",
   },
   {
     original: Kok2,
-    description: "Olika info om olika bilder",
   },
   {
     original: Kok3,
