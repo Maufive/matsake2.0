@@ -1,6 +1,5 @@
 import React from "react"
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
-
 import SEO from "../components/seo"
 import Nav from "../components/Nav"
 import Header from "../components/header"
@@ -10,7 +9,6 @@ import Oppettider from "../components/Oppettider"
 import HittaHit from "../components/HittaHit"
 import { Textbox } from "../styles/HittaKok"
 import Footer from "../components/Footer"
-
 import interstate from "../assets/interstate.woff"
 import interstate_bold from "../assets/interstate_bold.woff"
 
@@ -26,6 +24,7 @@ const theme = {
   black: "#282828",
   maxWidth: "1200px",
   mobileBreakpoint: "768px",
+  mobilePadding: "10px",
   animationTime: "300ms",
   bs: "0 5px 24px 0 rgba(0, 0, 0, 0.06)",
   linearGradient: "linear-gradient(90deg, #0B58A4 -23.52%, #27456B 124.66%)",
@@ -39,6 +38,25 @@ const StyledPage = styled.div`
   color: ${props => props.theme.grey};
   min-height: 100vh;
   width: 100%;
+
+  @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2.5px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `
 
 const GlobalStyle = createGlobalStyle`
@@ -93,7 +111,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-size: 4rem !important;
+    font-size: 4rem;
     font-weight: 900;
     margin-bottom: ${props => props.theme.marginY};
   }

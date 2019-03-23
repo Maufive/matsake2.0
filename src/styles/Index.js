@@ -15,6 +15,11 @@ export const IntroStyles = styled.div`
     font-weight: 400;
     color: ${props => props.theme.darkBlue};
   }
+
+  @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+    width: 100%;
+    padding: 0 2.5rem;
+  }
 `
 
 export const IconStyles = styled.div`
@@ -33,6 +38,10 @@ export const IconStyles = styled.div`
       height: 100px;
       width: 100px;
       fill: ${props => props.theme.darkBlue};
+      @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
 `
@@ -55,6 +64,13 @@ export const OppettiderStyles = styled.div`
       margin-block-start: 0;
       margin-bottom: 1.5rem;
     }
+    @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+      width: 100%;
+    }
+  }
+  @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+    justify-content: flex-start;
+    height: fit-content;
   }
 `
 
@@ -115,9 +131,17 @@ export const FooterStyles = styled.div`
 
     ul {
       list-style: none;
+      padding: 0;
       li {
         display: flex;
         align-items: center;
+      }
+    }
+    @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+      align-items: flex-start;
+
+      div {
+        padding-left: 40px;
       }
     }
   }
@@ -131,5 +155,10 @@ export const FooterStyles = styled.div`
     height: 1.5rem;
     width: 1.5rem;
     fill: ${props => props.theme.lightGrey};
+  }
+
+  @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 `

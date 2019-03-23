@@ -30,5 +30,19 @@ export const HeaderStyles = styled.header`
     @media (min-width: 1300px) {
       height: 90vh;
     }
+
+    @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+      height: 90vh;
+      padding: 0 ${props => props.theme.mobilePadding};
+
+      h1 {
+        letter-spacing: 0;
+      }
+
+      h3 {
+        text-align: center;
+        margin-top: 1.5rem;
+      }
+    }
   }
 `

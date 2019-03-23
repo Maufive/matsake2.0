@@ -11,6 +11,8 @@ const LogoStyles = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+  }
 `
 
 const Logo = () => (

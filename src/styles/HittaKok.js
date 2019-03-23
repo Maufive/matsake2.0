@@ -12,6 +12,10 @@ export const Textbox = styled.div`
   margin: 5rem auto;
   color: ${props => props.theme.darkBlue};
   font-weight: 400;
+  @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+    width: 100%;
+    padding: 0 2.5rem;
+  }
 `
 
 export const Hembesok = styled.div`
@@ -32,5 +36,11 @@ export const Hembesok = styled.div`
   p {
     width: 800px;
     margin: 5rem auto;
+    @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+      width: 100%;
+      padding: 0 2.5rem;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
   }
 `

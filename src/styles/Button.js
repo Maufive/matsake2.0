@@ -35,6 +35,14 @@ export const Button = styled.a`
     transform: translateY(1px);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
   }
+
+  @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+    font-size: 1.75rem;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+    display: none;
+  }
 `
 
 export const ButtonContainer = styled.div`
@@ -42,6 +50,11 @@ export const ButtonContainer = styled.div`
   margin-top: ${props => props.theme.marginY};
   width: 400px;
   justify-content: space-around;
+  @media (max-width: ${props => props.theme.mobileBreakpoint}) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 `
 
 export const LinkContainer = styled.div`
