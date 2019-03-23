@@ -12,6 +12,16 @@ import Kok6 from "../images/kok6.jpg"
 import Kok7 from "../images/kok7.jpg"
 import Kok9 from "../images/kok9.jpg"
 import Kok10 from "../images/kok10.jpg"
+import styled from "styled-components"
+
+const Gallery = styled.div`
+  max-width: 1600px;
+  margin: 0 auto;
+  > img {
+    max-width: 1200px;
+  }
+  margin-bottom: 5rem;
+`
 
 const images = [
   {
@@ -53,13 +63,15 @@ const HittaKok = () => (
         om du vill veta mer.
       </p>
     </Textbox>
-    <ImageGallery
-      autoPlay={true}
-      showBullets={true}
-      showIndex={true}
-      showThumbnails={false}
-      items={images}
-    />
+    <Gallery>
+      <ImageGallery
+        autoPlay={true}
+        showBullets={true}
+        showIndex={true}
+        showThumbnails={false}
+        items={images}
+      />
+    </Gallery>
     <Hembesok>
       <h2>Boka hembesök</h2>
       <p>
