@@ -3,6 +3,7 @@ module.exports = {
     title: `Mats Åke på Teg Umeå | Köp Vitvaror, kök, spis, tvättmaskin och torktumlare hos oss!`,
     description: `Välkommen till Mats Åke på Teg i Umeå. Köp Vitvaror, Kök, Spis, Tvättmaskin, Torktumlare, eller hushållsapparater, hos oss.`,
     author: `Niklas Albinsson`,
+    browserColor: `#0B58A4`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -36,16 +37,16 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `gatsby-starter-default`,
-    //     short_name: `starter`,
-    //     start_url: `/`,
-    //     display: `minimal-ui`,
-    //     icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        display: `minimal-ui`,
+        icon: `./favicon.png`, // This path is relative to the root of the site.
+      },
+    },
     `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-react-svg",
