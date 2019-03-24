@@ -3,7 +3,7 @@ module.exports = {
     title: `Mats Åke på Teg Umeå | Köp Vitvaror, kök, spis, tvättmaskin och torktumlare hos oss!`,
     description: `Välkommen till Mats Åke på Teg i Umeå. Köp Vitvaror, Kök, Spis, Tvättmaskin, Torktumlare, eller hushållsapparater, hos oss.`,
     author: `Niklas Albinsson`,
-    browserColor: `#0B58A4`,
+    color: `#0B58A4`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

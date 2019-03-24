@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, color }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -25,6 +25,14 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 property: `og:title`,
                 content: title,
+              },
+              {
+                property: `theme-color`,
+                content: color,
+              },
+              {
+                property: `apple-mobile-web-app-status-bar-style`,
+                content: `black-translucent`,
               },
               {
                 property: `og:description`,
@@ -79,6 +87,7 @@ SEO.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
+  color: PropTypes.string,
 }
 
 export default SEO
@@ -90,6 +99,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        color
       }
     }
   }
