@@ -36,7 +36,7 @@ collections:
     fields:
       - {
           name: description,
-          label: Beskrivning (Valfritt),
+          label: Beskrivning,
           widget: string,
           required: false,
         }
