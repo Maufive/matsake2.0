@@ -34,5 +34,10 @@ collections:
     folder: "static/gallery"
     create: true
     fields:
-      - { name: description, label: Beskrivning, widget: string }
+      - {
+          name: description,
+          label: Beskrivning (Valfritt),
+          widget: string,
+          required: false,
+        }
       - { name: image, label: Bild, widget: image }
