@@ -3,7 +3,7 @@ backend:
   branch: master
   # repo: Maufive/matsake2.0
 
-media_folder: static/personal/images
+media_folder: static/images
 public_folder: /images
 
 collections:
@@ -28,3 +28,11 @@ collections:
       - { name: "mon-fri", label: "Måndag - Fredag", widget: string }
       - { name: "sat", label: "Lördag", widget: string }
       - { name: "sun", label: "Söndag", widget: string }
+
+  - name: galleri
+    label: Bilder till galleri
+    folder: "static/gallery"
+    create: true
+    fields:
+      - { name: description, label: Beskrivning, widget: string }
+      - { name: image, label: Bild, widget: image }
