@@ -33,6 +33,7 @@ collections:
     label: Bilder till galleri
     folder: "static/gallery"
     create: true
+    identifier_field: "image"
     fields:
       - {
           name: description,
