@@ -1,6 +1,7 @@
 backend:
-  name: github
-  repo: Maufive/matsake2.0
+  name: git-gateway
+  branch: master
+  # repo: Maufive/matsake2.0
 
 media_folder: static/personal/images
 public_folder: /images
