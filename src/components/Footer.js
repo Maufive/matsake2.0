@@ -38,7 +38,7 @@ const Footer = () => (
             href="https://www.facebook.com/pages/category/Heating--Ventilating---Air-Conditioning-Service/ELON-Mats%C3%85ke-p%C3%A5-Teg-418746171519744/"
             target="_BLANK"
           >
-            <FacebookIcon /> Facebook
+            <FacebookIcon /> Mats-Åke på Teg
           </a>
         </li>
       </ul>
