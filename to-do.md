@@ -8,16 +8,9 @@ Offertförfrågan (Personal shopping) ?
 - Se elonbutiken.se personal shoppersektionen
 - "Boka tid" med personalen i butiken
 
-Boka hembesök
-
-- Boka ett hembesök för att planera kök
-- Kontaktformulär?
-
 CMS
 
-- Öppettider
 - Personal
-- Bilder på kök till slideshowen
 
 Kontaktformulär / Kontakt
 
