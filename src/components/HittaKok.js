@@ -45,7 +45,6 @@ const HittaKok = () => (
         }
         images.push(item)
       })
-      console.log(images)
       return (
         <HittaKokStyles>
           <Textbox>
