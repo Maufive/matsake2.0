@@ -10,22 +10,15 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "personal",
-        path: `${__dirname}/static/personal/`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/static/personal/images/`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         name: "oppettider",
         path: `${__dirname}/static/oppettider/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `kok`,
+        path: `${__dirname}/static/images`,
       },
     },
     {
