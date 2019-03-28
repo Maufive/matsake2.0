@@ -7,11 +7,19 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "oppettider",
         path: `${__dirname}/static/oppettider/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "personal",
+        path: `${__dirname}/static/personal/`,
       },
     },
     {
