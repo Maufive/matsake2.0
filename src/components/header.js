@@ -21,7 +21,9 @@ const Header = () => (
       <HeaderStyles>
         <Img fluid={data.file.childImageSharp.fluid} />
         <div>
-          <h1>Mats-Åke på Teg</h1>
+          <h1>
+            <span>ELON</span> Mats Åke på Teg
+          </h1>
           <h3>Vitvaror, kök och hushållsapparater i Umeå</h3>
           <ButtonContainer>
             <Button primary href="#oppettider">

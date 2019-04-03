@@ -40,20 +40,20 @@ const StyledPage = styled.div`
 
   @media (max-width: ${props => props.theme.mobileBreakpoint}) {
     h1 {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       letter-spacing: 2.5px;
     }
 
     h2 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
     }
 
     h3 {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 `

@@ -18,7 +18,7 @@ export const HeaderStyles = styled.header`
     align-items: center;
     justify-content: center;
     h1 {
-      letter-spacing: 5px;
+      /* letter-spacing: 5px; */
       text-transform: uppercase;
     }
     h1,
@@ -37,11 +37,16 @@ export const HeaderStyles = styled.header`
 
       h1 {
         letter-spacing: 0;
+        > span {
+          text-align: center;
+          display: block;
+          font-size: 3rem;
+        }
       }
 
       h3 {
         text-align: center;
-        margin-top: 1.5rem;
+        margin-top: 3rem;
       }
     }
   }
