@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Mats Åke på Teg Umeå | Köp Vitvaror, kök, spis, tvättmaskin och torktumlare hos oss!`,
-    description: `Välkommen till Mats Åke på Teg i Umeå. Köp Vitvaror, Kök, Spis, Tvättmaskin, Torktumlare, eller hushållsapparater, hos oss.`,
+    title: `ELON Mats Åke på Teg Umeå | Köp Vitvaror, kök, spis, tvättmaskin och torktumlare hos oss!`,
+    description: `Välkommen till ELON MatsÅke på Teg i Umeå. Här får du stans bästa service! Hos oss hittar du kylskåp, dammsugare och andra typer av hushållsapparater.`,
     author: `Niklas Albinsson`,
     color: `#0B58A4`,
     siteUrl: `https://www.elonumea.se`,

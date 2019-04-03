@@ -137,7 +137,7 @@ const Index = () => (
     <StyledPage>
       <GlobalStyle />
       <SEO
-        title="Mats Åke på Teg Umeå | Köp Vitvaror, kök, spis, tvättmaskin och torktumlare hos oss!"
+        title="ELON Mats Åke på Teg Umeå | Köp Vitvaror, kök, spis, tvättmaskin och torktumlare hos oss!"
         keywords={[
           "ELON",
           "Mats",
@@ -145,6 +145,8 @@ const Index = () => (
           "på",
           "teg",
           "Umeå",
+          "MatsÅke",
+          "service",
           "vitvaror",
           "kök",
           "spis",
